@@ -10,8 +10,10 @@ export default function Game(){
   return (
     <div className="container">
       <Row>
-        <Col className="text-center">
-          <h1>
+
+        <Col>
+          <img src="ACESlogo.png" width="50px" height="50px" className="float-left"/>
+          <h1 className="float-right">
             {( () => {
               switch(true) {
                 case (sentimentalValue < 3):
