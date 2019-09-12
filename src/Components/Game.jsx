@@ -39,12 +39,12 @@ export default function Game(){
       </Row>
       <Row>
 
-        <Col md={6}>
+        <Col sm={6}>
           <button className="btn btn-lg btn-danger btn-block" onClick={() => setSentimentalValue(sentimentalValue-1)}>
             negative
           </button>
         </Col>
-        <Col md={6}>
+        <Col sm={6}>
           <button className="btn btn-lg btn-success btn-block" onClick={() => setSentimentalValue(sentimentalValue+1)}>
             positive
           </button>
@@ -52,17 +52,25 @@ export default function Game(){
 
       </Row>
       <Row>
-        <Col md={6}>
+        <Col sm={6}>
           <Conversation sentimentalValue={sentimentalValue}/>
         </Col>
-        <Col md={6}>
+        <Col sm={2}>
+          <img src="placeholderPerson.jpg" width="100%" alt="person" />
+        </Col>
+        <Col sm={4}>
           <Card>
-            <CardImg top width="100%" src="placeholderPerson.jpg" alt="person" />
             <CardBody>
               <CardTitle>Corban Caller</CardTitle>
-              <CardSubtitle>(480) 555-5555</CardSubtitle>
-              <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-              <Button>Previous Call History</Button>
+              <CardText><small className="text-muted">(480) 555-5555</small></CardText>
+              <CardText><u>Caller Notes:</u></CardText>
+              <ul>
+                <li>Perscriptions</li>
+                <li>Quick requests</li>
+                <li>Long term customer</li>
+              </ul>
+
+              <Button outline size="sm">Previous Call History</Button>
             </CardBody>
           </Card>
         </Col>
