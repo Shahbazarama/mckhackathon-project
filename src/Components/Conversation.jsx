@@ -4,22 +4,24 @@ export default function Conversation({ sentimentalValue }) {
 
   return (
     <>
+    <h2 className="text-center">
     {( () => {
       switch(true) {
         case (sentimentalValue < 3):
-          return <h1>Good luck</h1>;
+          return "Calmly resolve the situation.";
         case (sentimentalValue < 5):
-          return <h1>Be calm</h1>;
+          return "Try your best to be understanding.";
         case (sentimentalValue == 5):
-          return <h1>Stay positive</h1>;
+          return "Stay positive!";
         case (sentimentalValue < 8):
-          return <h1>Keep it up!</h1>;
+          return "Keep it up!";
         case (sentimentalValue > 7):
-          return <h1>Great job!</h1>;
+          return "Excellent job!";
         default:
           return null;
       }
     })()}
+  </h2>
     </>
   )
 }
