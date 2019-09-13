@@ -6,7 +6,8 @@ export default function Header( ) {
     <>
     <Row>
       <Col>
-        <img src="mckesson.png" height="80%" width="40%" />
+        <br></br>
+        <img src="mckesson.png" height="50%" width="35%" />
       </Col>
     </Row>
 

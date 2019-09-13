@@ -8,7 +8,7 @@ export default function Game(){
 
 
   const scriptLines = [
-    '<b>Employee:</b> <span style="color: green">Thank you</span> for calling Drug Support Program. This is Raffi speaking, <span style="color: green">how may I help you?</span>',
+    '<b>Employee:</b> <span style="color: green">Thank you</span> for calling Drug Support Program. This is Ace speaking, <span style="color: green">how may I help you?</span>',
 '<b>Caller:</b> I am standing in line <span style="color: red">trying to get my drug</span> but the pharmacist says that I am <span style="color: red">not eligible</span>' +
 ' to receive my drug',
 '<b>Employee:</b> <span style="color: green">I am sorry to hear that.</span> what is your name and patient number, so that I may <span style="color: green">help</span> you as' +
@@ -34,8 +34,8 @@ export default function Game(){
           <Card>
             <CardImg top width="100%" src="ACESlogo.png" alt="employee" />
             <CardBody>
-              <CardTitle>Aces Spade</CardTitle>
-              <CardText><small className="text-muted">Caller Credit Score: 750</small></CardText>
+              <CardTitle>Ace Spade</CardTitle>
+              <CardText><small className="text-muted">Ace's Credit Score: 750</small></CardText>
 
             </CardBody>
           </Card>
@@ -46,7 +46,7 @@ export default function Game(){
 
         <Col md={3}>
           <Card>
-            <CardImg top width="100%" src="placeholderPerson.jpg" alt="person" />
+            <CardImg width="90%" height="75%" src="placeholderPerson.png" alt="person" />
             <CardBody>
               <CardTitle>Corban Caller</CardTitle>
               <CardText><small className="text-muted">(480) 555-5555</small></CardText>
